@@ -11,7 +11,7 @@ npm i use-touch --save
 
 ### Useage
 
-```
+```jsx
   import useTouch from 'use-touch';
 
   const App = () => {
@@ -32,7 +32,7 @@ npm i use-touch --save
 ```
 
 ###Reference
-```
+```jsx
 const [newReactElement, isTouched] = useTouche(reactElement)
 const [newReactElement, isTouched] = useTouche(hovered => reactElement)
 ```
