@@ -33,6 +33,6 @@ npm i use-touch --save
 
 ### Reference
 ```jsx
-const [newReactElement, isTouched] = useTouche(reactElement)
-const [newReactElement, isTouched] = useTouche(hovered => reactElement)
+const [newReactElement, isTouched] = useTouch(reactElement)
+const [newReactElement, isTouched] = useTouch(hovered => reactElement)
 ```

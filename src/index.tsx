@@ -3,18 +3,18 @@ import { useState } from 'react'
 import { ReactFunction, checkTheElement } from './utils';
 
 const useTouch = (element: JSX.Element | ReactFunction): [React.ReactElement<any>, boolean] => {
-  const [touched, changeTouch] = useState(false);
+  const [touched, setTouched] = useState(false);
 
   const handleTouchStart = (handler: any) => (event: TouchEvent) => {
     if (handler && typeof handler === 'function') handler(event);
     
-    changeTouch(true);
+    setTouched(true);
   }
 
   const handleTouchEnd = (handler: any) => (event: TouchEvent) => {
     if (handler && typeof handler === 'function') handler(event);
     
-    changeTouch(false);
+    setTouched(false);
   }
 
   if (checkTheElement(element)) {
@@ -22,10 +22,9 @@ const useTouch = (element: JSX.Element | ReactFunction): [React.ReactElement<any
   }
 
   const newElement  = React.cloneElement(element, {
-    onTouchStart: handleTouchStart(element.props.onMouseEnter),
-    onTouchEnd: handleTouchEnd(element.props.onMouseLeave),
-    onTouchCancel: handleTouchEnd(element.props.onTouchCancel),
-    onTouchMove: handleTouchStart(element.props.onTouchMove)
+    onTouchStart: handleTouchStart(element.props.onTouchStart),
+    onTouchEnd: handleTouchEnd(element.props.onTouchEnd),
+    onTouchCancel: handleTouchEnd(element.props.onTouchCancel)
   });
 
   return [newElement, touched];
