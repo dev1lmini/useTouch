@@ -1,5 +1,5 @@
 {
-  "name": "react-use-touch",
+  "name": "use-touch",
   "version": "0.1.0",
   "description": "React hook to use touch events",
   "main": "lib/index.js",
