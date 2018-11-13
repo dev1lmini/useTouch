@@ -1,0 +1,39 @@
+{
+  "name": "react-use-touch",
+  "version": "0.1.0",
+  "description": "React hook to use touch events",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dev1lmini/useTouch.git"
+  },
+  "keywords": [
+    "react",
+    "use",
+    "hooks",
+    "usetouch",
+    "touch",
+    "react-touch",
+    "react-use",
+    "react-use-touch",
+    "use-touch",
+    "react-hook"
+  ],
+  "author": "Markiian Linynskyy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dev1lmini/useTouch/issues"
+  },
+  "homepage": "https://github.com/dev1lmini/useTouch#readme",
+  "dependencies": {
+    "@types/react": "^16.7.3",
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.1.6"
+  }
+}
