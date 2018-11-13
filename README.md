@@ -9,7 +9,7 @@ React hook for touch events
 npm i use-touch --save
 ```
 
-### Useage
+### Usage
 
 ```jsx
   import useTouch from 'use-touch';
